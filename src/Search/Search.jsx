@@ -12,7 +12,7 @@ export function Search(){
 	}, [searchText])
 
     const filteredContacts = () => {
-        return contactList.filter(contact => `${contact.firstName} ${contact.lastName} ${contact.phone}`.toLowerCase().includes(searchText));
+        return contacts.filter(contact => `${contact.firstName} ${contact.lastName} ${contact.phone}`.toLowerCase().includes(searchText));
     }
 
     return(
